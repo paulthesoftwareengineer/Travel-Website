@@ -1,0 +1,84 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    font-color: #000;   /* Black font color */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: white;  /* Light Yellow background color */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+input, textarea {
+    font-family: inherit;
+    font-size: inherit;
+}
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#navbar {
+    background-color:yellow;  /* Tan color for the navigation bar */
+    color: #000;    /* Black text color */
+    padding: 10px 0;
+}
+
+#navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+#navbar ul li a {
+    color: #000;    /* Black link color */
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+#navbar ul li a:hover {
+    background-color: #FFFFE0;  /* Light yellow color on hover */
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.jumbotron {
+    background-image: url('images/bee.jpg');
+    background-size: cover;  /* Cover the entire viewport */
+    background-repeat: no-repeat;  /* Do not repeat the image */
+    background-position: center center;  /* Center the image */
+    color: white;  /* Assuming the image is dark, let's set the text color to white for better contrast */
+}
+
+header {
+    background-color: #FFF8DC;   /* Eggshell color for the header */
+    color: #000;    /* Black text color for header */
+    text-align: center;
+    padding: 100px 0;
+}
+
+section {
+    padding: 40px 0;
+}
+
+@media screen and (max-width: 768px) {
+    #navbar .container {
+        flex-direction: column;
+    }
+
+    #navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+}
